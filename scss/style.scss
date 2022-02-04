@@ -565,3 +565,17 @@ img {
     background-color: rgba($color: #f86061, $alpha: 1);
   }
 }
+
+// ===== SCROLL BAR =====
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #f9f9f9;
+
+  &-thumb {
+    background-color: rgba($color: #f86061, $alpha: 0.5);
+
+    &:hover {
+      background-color: rgba($color: #f86061, $alpha: 0.7);
+    }
+  }
+}
