@@ -408,3 +408,50 @@ img {
     }
   }
 }
+
+// ===== CALLBACK SECTION =====
+.callback {
+  &__container {
+    gap: 3rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 15px;
+    color: $grey-color;
+    line-height: $leading-text;
+    margin-bottom: 2rem;
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: 1.9px solid $black-color;
+      color: $black-color;
+      transition: $transition-400;
+
+      &:hover {
+        background-color: $black-color;
+        color: $white-color;
+        box-shadow: 0 4px 6px rgba($color: #2e2e2e, $alpha: 0.2);
+      }
+    }
+
+    &-icon {
+      font-size: 1.5rem;
+    }
+  }
+}
