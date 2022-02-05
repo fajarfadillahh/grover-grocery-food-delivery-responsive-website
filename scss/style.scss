@@ -579,3 +579,38 @@ img {
     }
   }
 }
+
+// ===== MEDIA QUERIES =====
+// ----- Media Screen 480px -----
+@media screen and (min-width: 480px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .home {
+    padding-top: 10rem;
+  }
+
+  .home__data,
+  .service__data,
+  .feature__data,
+  .callback__data {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .home__title {
+    font-size: 38px;
+  }
+
+  .service__group {
+    grid-template-columns: 0.7fr;
+  }
+
+  .home__img,
+  .feature__img,
+  .callback__img {
+    width: 380px;
+    justify-self: center;
+  }
+}
