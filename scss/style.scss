@@ -625,3 +625,61 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+// ----- Media Screen 769px -----
+@media screen and (min-width: 769px) {
+  .section {
+    padding: 8rem 0;
+  }
+
+  .header {
+    &__container {
+      position: relative;
+      height: $header-height + 1rem;
+    }
+
+    &__menu {
+      display: flex;
+      align-items: center;
+    }
+
+    &__list {
+      position: absolute;
+      transform: translateX(-50%);
+      left: 50%;
+      flex-direction: row;
+      gap: 2.5rem;
+    }
+
+    &__link {
+      padding-left: 0;
+      min-height: 0;
+
+      &.active-link {
+        background-color: transparent;
+
+        &::before {
+          position: absolute;
+          content: "";
+          top: 1.7rem;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          width: 5px;
+          height: 5px;
+          background-color: $red-color;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    &__button {
+      margin: 0;
+    }
+
+    &__data,
+    &__toggle {
+      display: none;
+    }
+  }
+}
